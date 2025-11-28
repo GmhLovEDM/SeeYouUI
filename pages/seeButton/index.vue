@@ -36,7 +36,7 @@
 			<SeeButton title="默认动画" isRipple />
 			<SeeButton type="primary" size="normal" title="按钮颜色" isRipple />
 			<SeeButton size="normal" title="动画颜色" isRipple ripple-color="blue" />
-			<SeeButton size="large" title="动画时长(10000ms)" isRipple ripple-time="10000" ripple-color="red" mask-time="20000" />
+			<SeeButton size="large" title="动画时长(10000ms)" isRipple :ripple-time="10000" ripple-color="red" :mask-time="20000" />
 		</view>
 		<text class="title">自定义</text>
 		<view class="content">

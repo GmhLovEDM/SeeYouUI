@@ -10,7 +10,15 @@
 			"path" : "pages/seeButton/index",
 			"style" : 
 			{
-				"navigationBarTitleText" : "按钮",
+				"navigationBarTitleText" : "Button 按钮",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/seeText/index",
+			"style" : 
+			{
+				"navigationBarTitleText" : "Text 文本",
 				"enablePullDownRefresh" : false
 			}
 		}

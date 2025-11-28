@@ -51,7 +51,7 @@
 /**
  * Button 按钮
  * @description 此组件基于uniapp官方button，进行二次封装
- * @tutorial https://www.uviewui.com/components/form.html
+ * @tutorial http://113.44.242.235:9000/components/button/
  *
  * @property {String}												title			标题
  * @property {"normal" | "large" | "small" | "mini"}				size			大小（默认normal）
@@ -62,8 +62,8 @@
  * @property {Number}												rippleTime		水波纹持续时间（默认500ms）
  * @property {Number}												maskTime		遮罩层持续时间（默认1000ms，建议为rippleTime的2倍）
  * @property {String}												rippleColor		水波纹颜色（默认rgba(0, 0, 0, .15)）
- * @property {String}												rippleStyle		水波纹样式
- * @property {String}												customStyle		按钮样式
+ * @property {Object}												rippleStyle		水波纹样式
+ * @property {Object}												customStyle		按钮样式
  * @property {String | NULL}										hoverClass		点击按钮时样式
  * @property {1 | 0}												border			按钮边框（默认1，为0时无边框）
  * @property {Boolean}												isDisabled		是否禁用状态
@@ -90,12 +90,12 @@ const props = withDefaults(
 		maskTime?: number;
 		isHollow?: boolean;
 		rippleColor?: string;
-		rippleStyle?: string;
-		customStyle?: string;
+		rippleStyle?: Record<string, any> | null;
+		customStyle?: Record<string, any> | null;
 		hoverClass?: string | null;
 		border?: 1 | 0;
 		isDisabled?: boolean;
-		radius: number;
+		radius?: number;
 	}>(),
 	{
 		title: '',
@@ -108,8 +108,8 @@ const props = withDefaults(
 		maskTime: 1000,
 		isHollow: false,
 		rippleColor: 'rgba(0, 0, 0, .15)',
-		rippleStyle: '',
-		customStyle: '',
+		rippleStyle: null,
+		customStyle: null,
 		hoverClass: '',
 		border: 1,
 		isDisabled: false,
