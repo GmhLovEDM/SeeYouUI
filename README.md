@@ -14,7 +14,7 @@
 
 # SeeYouUI
 
-## [官方文档：(http://113.44.242.235:9000/)](http://113.44.242.235:9000/)
+## [官方文档：(https://www.seeuui.cn/)](https://www.seeuui.cn/)
 
 ## 特性
 
